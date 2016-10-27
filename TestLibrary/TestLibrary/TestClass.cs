@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Xunit;
 
 namespace TestLibrary
 {
     public class TestClass
     {
+        [Fact]
         public void SayHello()
         {
-            Console.WriteLine("Hello");
+            Assert.True(false, "My error message");
         }
     }
 }
